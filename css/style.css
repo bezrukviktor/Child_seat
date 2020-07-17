@@ -10,6 +10,25 @@
   margin: auto;
 }
 
+@media (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+}
+
 @font-face {
   font-family: 'Raleway Light';
   src: url("../fonts/Raleway-Light.eot");
@@ -159,7 +178,7 @@ a:active, a:focus, button:active, button:focus, input:active, input:focus {
 }
 
 .hero {
-  background: #ebf2f7 url(../img/hero/hero-bg.jpg) no-repeat left 250px top;
+  background: #ebf2f7 url(../img/hero/hero-bg.jpg) no-repeat left 100px top;
   background-size: contain;
 }
 
@@ -185,5 +204,73 @@ a:active, a:focus, button:active, button:focus, input:active, input:focus {
   line-height: 1.5;
   color: #68b0c9;
   font-family: 'Raleway Medium', 'sans-serif';
+}
+
+@media (max-width: 1199px) {
+  .hero {
+    background-position: left -20% top;
+  }
+}
+
+@media (max-width: 991px) {
+  .hero {
+    background-position: left 200% top;
+    background-size: cover;
+  }
+  .hero__title {
+    max-width: 100%;
+    padding: 35px;
+    font-size: 35px;
+    background: rgba(255, 255, 255, 0.6);
+    margin-bottom: 0;
+  }
+  .hero__subtitle {
+    padding: 35px;
+    padding-top: 0;
+    background: rgba(255, 255, 255, 0.6);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    background-position: left 100% top;
+  }
+  .hero__title {
+    padding: 30px;
+    font-size: 30px;
+  }
+  .hero__subtitle {
+    padding: 30px;
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    background-position: left top;
+    background-size: contain;
+  }
+  .hero__title {
+    font-size: 22px;
+    padding: 15px;
+  }
+  .hero__subtitle {
+    padding: 15px;
+    font-size: 17px;
+    padding-top: 0;
+  }
+  .header__phone {
+    font-size: 16px;
+  }
+  .header__callback {
+    font-size: 11px;
+  }
+  .header__callback-box {
+    margin-left: auto;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 38px 0px rgba(104, 176, 201, 0.34);
+            box-shadow: 0px 0px 38px 0px rgba(104, 176, 201, 0.34);
+  }
 }
 /*# sourceMappingURL=style.css.map */
