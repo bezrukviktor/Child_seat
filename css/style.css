@@ -130,6 +130,22 @@ a:active, a:focus, button:active, button:focus, input:active, input:focus {
   font-family: 'Raleway Bold', 'sans-serif';
 }
 
+.section {
+  padding: 80px 0;
+}
+
+.section__title {
+  text-align: center;
+  font-size: 36px;
+  font-family: 'Raleway Bold', 'sans-serif';
+}
+
+@media (max-width: 576px) {
+  .section__title {
+    font-size: 20px;
+  }
+}
+
 .header-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -271,6 +287,87 @@ a:active, a:focus, button:active, button:focus, input:active, input:focus {
     border-radius: 20px;
     -webkit-box-shadow: 0px 0px 38px 0px rgba(104, 176, 201, 0.34);
             box-shadow: 0px 0px 38px 0px rgba(104, 176, 201, 0.34);
+  }
+}
+
+.advantage-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 110px;
+}
+
+.advantage-row:nth-child(3) .advantage-group {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  text-align: right;
+}
+
+.advantage-group {
+  max-width: 50%;
+}
+
+.advantage-group__title {
+  margin-bottom: 35px;
+  font-size: 30px;
+  color: #68b0c9;
+  font-family: 'Raleway Bold', 'sans-serif';
+}
+
+.advantage-group__description {
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.advantage__img {
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .advantage-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 60px;
+  }
+  .advantage-group {
+    margin-bottom: 30px;
+    text-align: center;
+    max-width: 75%;
+  }
+  .advantage-row:nth-child(3) .advantage-group {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .advantage-group {
+    max-width: 100%;
+  }
+  .advantage-group__title {
+    font-size: 18px;
+  }
+  .advantage-group__description {
+    font-size: 14px;
+  }
+  .advantage__img {
+    max-width: 250px;
+    max-height: 250px;
   }
 }
 /*# sourceMappingURL=style.css.map */

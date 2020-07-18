@@ -1,0 +1,54 @@
+.advantage
+  &-row
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-top: 110px
+  &-row:nth-child(3)
+    .advantage-group
+      order: 1
+      text-align: right
+  &-group
+    max-width: 50%
+    &__title
+      margin-bottom: 35px
+      font-size: 30px
+      color: $secondary-color
+      +bold
+    &__description
+      font-size: 18px
+      line-height: 1.2
+  &__img
+    max-width: 300px
+    max-height: 300px
+    border-radius: 50%
+    object-fit: cover
+
+@media (max-width: 768px)
+  .advantage
+    &-row
+      flex-direction: column
+      margin-top: 60px
+    &-group
+      margin-bottom: 30px
+      text-align: center
+      max-width: 75%
+    &-row:nth-child(3)
+      .advantage-group
+        order: 0
+        text-align: center
+
+@media (max-width: 576px)
+  .advantage
+    &-group
+      max-width: 100%
+      &__title
+        font-size: 18px
+      &__description
+        font-size: 14px
+    &__img
+      max-width: 250px
+      max-height: 250px
+
+
+
