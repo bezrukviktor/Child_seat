@@ -140,6 +140,15 @@ a:active, a:focus, button:active, button:focus, input:active, input:focus {
   font-family: 'Raleway Bold', 'sans-serif';
 }
 
+ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
 @media (max-width: 1199px) {
   .image-bg {
     background-position: left -20% top;
@@ -555,6 +564,68 @@ a:active, a:focus, button:active, button:focus, input:active, input:focus {
   }
   .discount-block__delivery {
     font-size: 20px;
+  }
+}
+
+.counter-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.counter-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 18px;
+  font-family: 'Raleway Medium', 'sans-serif';
+}
+
+.counter-list__item strong {
+  display: block;
+  background: url(../img/counter/icon.png) no-repeat center;
+  width: 100%;
+  height: 95px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 48px;
+  color: #68b0c9;
+  line-height: 100px;
+  font-family: 'Raleway Bold', 'sans-serif';
+}
+
+@media (max-width: 768px) {
+  .counter-list__item {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .counter-list__item {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .counter-list__item:last-child {
+    margin-bottom: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
