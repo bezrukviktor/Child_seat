@@ -140,9 +140,32 @@ a:active, a:focus, button:active, button:focus, input:active, input:focus {
   font-family: 'Raleway Bold', 'sans-serif';
 }
 
+@media (max-width: 1199px) {
+  .image-bg {
+    background-position: left -20% top;
+  }
+}
+
+@media (max-width: 991px) {
+  .image-bg {
+    background-position: left 200% top;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 768px) {
+  .image-bg {
+    background-position: left 100% top;
+  }
+}
+
 @media (max-width: 576px) {
   .section__title {
     font-size: 20px;
+  }
+  .image-bg {
+    background-position: left top;
+    background-size: contain;
   }
 }
 
@@ -297,9 +320,8 @@ a:active, a:focus, button:active, button:focus, input:active, input:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin-top: 110px;
 }
 
@@ -368,6 +390,171 @@ a:active, a:focus, button:active, button:focus, input:active, input:focus {
   .advantage__img {
     max-width: 250px;
     max-height: 250px;
+  }
+}
+
+.discount {
+  background: #ebf2f7 url(../img/discount/discount-bg.jpg) no-repeat left 100px top;
+  background-size: contain;
+}
+
+.discount-block {
+  position: relative;
+  max-width: 350px;
+  margin-left: auto;
+  text-align: center;
+}
+
+.discount-block__title {
+  font-size: 55px;
+  margin-bottom: 10px;
+  font-family: 'Raleway Bold', 'sans-serif';
+}
+
+.discount-block__delivery {
+  margin-bottom: 15px;
+  display: block;
+  font-size: 26px;
+  font-family: 'Raleway Black', 'sans-serif';
+}
+
+.discount-block__present {
+  position: relative;
+  margin-left: 30px;
+  font-size: 25px;
+  color: #68b0c9;
+  font-family: 'Raleway Bold', 'sans-serif';
+}
+
+.discount-block__present::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -30px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-image: url("../img/discount/present.svg");
+  height: 20px;
+  width: 22px;
+}
+
+.discount-order {
+  max-width: 280px;
+  margin: 50px auto 0 auto;
+  padding: 35px;
+  border: 4px solid #fff;
+  border-radius: 22px;
+}
+
+.discount-deadline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 45px;
+}
+
+.discount-deadline__figure {
+  width: 50px;
+  height: 45px;
+  line-height: 40px;
+  background: url("../img/discount/calendar.png") no-repeat center center;
+  background-size: cover;
+  text-align: center;
+  color: #ffffff;
+  font-size: 30px;
+  font-family: 'Raleway Bold', 'sans-serif';
+}
+
+.discount-deadline__stock {
+  font-size: 14px;
+  text-align: left;
+  color: #ba6c6c;
+  font-family: 'Raleway Bold', 'sans-serif';
+}
+
+.discount-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  left: -270px;
+  width: 150px;
+  height: 150px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.discount-price__old {
+  padding: 10px 0;
+  font-size: 18px;
+  text-decoration: line-through;
+}
+
+.discount-price__current {
+  padding: 10px 0;
+  font-size: 30px;
+  color: #d04545;
+  font-family: 'Raleway Bold', 'sans-serif';
+}
+
+.discount-price__current::before {
+  content: '';
+  border-top: 1px solid #e8e8e8;
+  display: block;
+  position: relative;
+  top: -10px;
+  margin: 0 auto;
+  width: 75%;
+}
+
+@media (max-width: 1199px) {
+  .discount {
+    background-position: left -20% top;
+  }
+}
+
+@media (max-width: 991px) {
+  .discount {
+    background-position: left 200% top;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 768px) {
+  .discount {
+    background-image: none;
+  }
+  .discount-block {
+    margin: 0 auto;
+  }
+  .discount-price {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .discount-block__title {
+    font-size: 30px;
+  }
+  .discount-block__delivery {
+    font-size: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */

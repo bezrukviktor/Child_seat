@@ -60,10 +60,25 @@ a:active, a:focus, button:active, button:focus, input:active, input:focus
     font-size: 36px
     +bold
 
+
+@media (max-width: 1199px)
+  .image-bg
+    background-position: left -20% top
+@media (max-width: 991px)
+  .image-bg
+    background-position: left 200% top
+    background-size: cover
+@media (max-width: 768px)
+  .image-bg
+    background-position: left 100% top
 @media (max-width: 576px)
   .section
     &__title
       font-size: 20px
+  .image-bg
+    background-position: left top
+    background-size: contain
+  
 
   
 
